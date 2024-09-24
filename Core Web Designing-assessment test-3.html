@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    /* home page */
+    
+    .home-page{
+        background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20230722/pngtree-d-render-of-office-workspace-with-window-and-door-in-front-image_3781964.jpg);
+        height: 500px;
+        width: 100%;
+        display: flex;
+        gap: 50%;
+    }
+
+    /* header */
+    
+    header{
+      background-color: rgba(0, 0, 0, 0.568);
+      color:whitesmoke;
+      width: 17%;
+      height: 2115px;
+      gap: 30px;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      position: absolute;
+    }
+    header h2{
+        border: double wheat;
+        margin: 10%;
+        width: 120px;
+        margin-top: 50px;
+        padding: 5px 0;
+        margin-left: 20%;
+    }
+     header .nav ul{
+    list-style: none;
+    margin-top: 5px;
+    }
+    
+     header .nav ul li{
+        margin-top: 10px;
+    }
+     header .nav ul li a{
+        text-decoration: none;
+        color: whitesmoke;
+    }
+  
+    .card {
+        width: 30%;
+        padding: 10px 20px;
+        position: absolute;
+        top: 20%; 
+        right: 10%;
+        background-color: rgba(7, 7, 7, 0.445);
+        color: rgba(255, 255, 255, 0.815);
+    }
+
+    header .follow a{
+    color: bisque;
+    margin-left: 10px;
+    font-size: 24px;
+   } 
+   
+
+/* Hero-section */
+
+.hero-section{
+    display: flex;
+    gap: 100px;
+    padding: 30px 10px;
+    margin-left: 25%;
+    width: 60%;
+    justify-content: center;
+}
+.hero-section .about-us i, 
+.hero-section .company-profile i{ 
+    font-size: 60px;
+    color: rgb(29, 81, 88);
+}
+.hero-section .about-us h1, 
+.hero-section .company-profile h1{
+    color: rgba(0, 0, 0, 0.733);
+    margin: 17px 0px;
+}
+
+/* our-work */
+
+.our-work{
+   border: 2px solid black;
+   outline: 2px solid black;
+   outline-offset: 2px;
+   width: fit-content;
+   padding: 15px;
+    margin-left: 25%;
+    margin-top: 5%;
+   }
+.our-work h2{
+    color: rgba(0, 0, 0, 0.733);
+}
+.our-work .photo{
+    
+    justify-content: center;
+    margin: 30px;
+    gap: 10px;
+}
+.our-work .photo img{
+    height: 190px;
+    width: 180px;
+    margin-bottom: 10%;
+    
+}
+.slider i{
+    display: flex;
+    font-size: 40px;
+    color: rgba(34, 31, 31, 0.781);
+justify-content: center;
+    margin-top: -10%;
+  
+}
+
+/* client-section */
+
+.client-info h2{
+    margin: 10px 0px;
+    color: rgba(0, 0, 0, 0.733);
+}
+.client-info {
+    width: 65%;
+    margin: 6% 25% ;
+    
+}
+.client-logo{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25%;
+    gap: 30px  70px;
+    
+}
+.client-logo img{
+    height: 90px;
+    width: 160px;
+    padding: 6px;
+    border:  1px solid black;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    margin-left: 25%;
+    gap: 20%;
+
+}
+footer .note h2{
+    color: rgba(0, 0, 0, 0.733);
+}
+footer .note{
+   border: 2px solid black;
+   outline: 2px solid black;
+   outline-offset: 2px;
+   width: fit-content;
+   height: fit-content;
+   margin: 10% 0;
+   padding: 20px;
+   width: 35%;
+}
+footer .note p{
+margin-top: 20px;
+}
+footer .info{
+    height: 50px;
+    margin-top: 11%;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    }
+
+footer .info input{
+        outline: 0;
+         border: 0;
+         
+         padding: 10px 30px;
+         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+footer .info button{
+    width: fit-content;
+    padding: 5px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+  footer .info button:active{
+    scale: 0.9;
+  }
+</style>
+<body>
+    <!-- home-page -->
+    
+    <div class="home-page">
+    
+  <!-- header -->
+   
+        <header>
+        <h2>DREAM PLUSE</h2>
+        <div class="nav">
+            <ul>
+                <li><a href="#">INTRO</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">WORK</a></li>
+                <li><a href="#">CLIENT</a></li>
+                <li><a href="#">LET'STALK</a></li>
+            </ul>
+        </div>
+            <div class="follow">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="des">
+                <p> Copyright 2020 Dream Pulse <br>
+                    Design: Template Mo
+                </p>
+            </div>
+    </header>
+    
+    <div class="card">
+        <h2>INTRODUCING DREAM PLUSE</h2><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium perferendis eligendi totam nisi perspiciatis esse repellat quo,<br><br> mollitia est delectus nulla aliquid libero vero iste! Magni perferendis eius eligendi cumque ipsa voluptates aperiam
+             repellat ipsam obcaecati asperiores neque culpa, alias atque quidem qui sit nisi quae! Porro aperiam cupiditate magni?
+        </p>
+    </div>
+   
+     </div>
+    
+     <!--hero-section  -->
+
+    <div class="hero-section">
+        <div class="about-us">
+            <i class="fa-solid fa-scale-balanced"></i>
+            <h1>About-us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ea esse deserunt placeat libero.<br> <br> Quibusdam mollitia itaque,
+                 facilis ad debitis harum. Minima praesentium fuga obcaecati nulla! Ex rem corrupti cum.</p>
+        </div>
+        <div class="company-profile">
+            <i class="fa-solid fa-hotel"></i>
+            <h1>Company-Profile</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ea esse deserunt placeat libero.<br> <br> Quibusdam mollitia itaque,
+                facilis ad debitis harum. Minima praesentium fuga obcaecati nulla! Ex rem corrupti cum.</p>
+         </div>
+    </div>
+   
+    <!-- our-work -->
+    
+    <div class="our-work">
+        <h2>OUR-WORK</h2>
+        <div class="photo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-YIGV8GTRHiW_KACLMhhi9fEq2T5BDQcEyA&s" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtDZ3-Yw3bgKq-QSpxuvlERsUfa77gz2JJcw&s" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs5cALBS8MGUOOnUJ_-apynWzTo7dyVc2QVA&s" alt="">
+            <img src="https://img.freepik.com/premium-photo/cute-asian-girl-pink_836063-183.jpg" alt="">
+        </div>
+        <div class="slider">
+            <i class="fa-solid fa-ellipsis"></i>
+        </div>
+        </div>
+    
+        <!-- client-section -->
+        
+        <div class="client-info">
+            <h2>OUR-CLIENIT</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi totam rem aperiam officiis perferendis. Distinctio, omnis aut?
+                Voluptate facilis eius temporibus accusantium modi exercitationem assumenda ipsa eum odio, provident quae.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi totam rem aperiam officiis perferendis.</p>
+        </div>
+
+        <div class="client-logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/MYOB_Logo.png" alt="">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/belimo-logo-png-transparent.png" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeZgD1en6lEua3AADTfPYmZnlvC8w1BVQAaXdYZjqFrCv0cY1sczGZIszUmUsAovnLl7Y&usqp=CAU" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0ZVpzNg4bv9ssGhdQDW2K0f_vdClI8rbMSg&s" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZOZN46b0w_ewIw1I5n_AGxNsjnC3Qiqhn6g&s" alt="">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Trustly-logo.png" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUpq8oQAtYOSokrobYLiBvd939Fao6gOg9Vw&s" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDVtva2faJ2Tee0Myvh8EwvAa9eMPZz39Wxg&s" alt="">
+        </div>
+        
+        <!-- Footer -->
+
+        <footer>
+            <div class="note">
+                <h2>Talk to Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cupiditate<br><br> 
+                    distinctio esse molestiae sapiente nesciunt<br><br> animi sint labore sequi aspernatur odio!<br><br>
+                     Doloribus incidunt quibusdam </p>
+            </div>
+            <div class="info">
+                <input type="text" placeholder=" Your Name"><br>
+                <input type="text" placeholder="Your Email"><br>
+                <input type="text" placeholder="Message.."><br>
+                <button> SEND</button>
+            </div>
+        </footer>
+    
+</body>
+</html>
